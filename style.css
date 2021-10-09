@@ -1,9 +1,28 @@
-h1{
-    color: violet;
-    text-align: center;
+/* Comment goes here */
+.page-title
+{
+    font-family: serif;
+    font-weight: bold;
 }
 
-h2{
-    color: brown;
-    text-align: center;
+.home
+{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.card-img-top
+{
+    height: 300px;
+}
+
+.icon-features
+{
+    margin: 10px;
+}
+
+.copy-right
+{
+    background-color: LightGray;
 }
