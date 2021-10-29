@@ -13,7 +13,62 @@
         <title>KSK | Music</title>
 
     </head>
+
     <body>
+        <div id="map-canvas" style="height: 600px; width: 600px;"></div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY_HERE"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script>
+            var positionToStarbucksLatlng = function(position) {
+                return position.coords.latitude + ',' + position.coords.longitude;
+            };
+        var positionToGoogleLatLng = function(position) {
+            return new google.maps.LatLng(
+                position.coords.latitude,
+                position.coords.longitude
+            );
+        };
+        var storeToGoogleLatLng = function(store) {
+            return new google.maps.LatLng(
+                store.store.coordinates.latitude,
+                store.store.coordinates.longitude
+            );
+        };
+        var drawStoresMap = function(position, storesData) {
+var map = new google.maps.Map(document.getElementById('map-canvas'), {
+center: positionToGoogleLatLng(position),
+zoom: 12
+});
+for (var i = 0; i < storesData.stores.length; i++) {
+drawMarker(map, storesData.stores[i]);
+}
+};
+            var drawMarker = function(map, store) {
+                var marker = new google.maps.Marker({
+                    map: map,
+                    position: storeToGoogleLatLng(store),
+                    title: store.store.name
+                });
+            };
+            $(document).ready(function() {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    $.ajax({
+                        url: 'https://testhost.openapi.starbucks.com/location/v2/stores/nearby',
+                        headers: {
+                            'Accept': 'application/json'
+                        },
+                        data: {
+                            radius: 10,
+                            latlng: positionToStarbucksLatlng(position)
+                        },
+                        success: function(storesData) {
+                            drawStoresMap(position, storesData);
+                        }
+                    });
+                });
+            });
+        </script>
+
         <header>
 
         </header>
