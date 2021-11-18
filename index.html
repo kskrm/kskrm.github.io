@@ -7,152 +7,64 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="styles.css" rel="stylesheet">
 
-        <title>KSK | Website</title>
+        <title>KSK | Home</title>
 
     </head>
     <body>
-        <header>
-
-        </header>
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand page-title" href="index.html">KSK</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#">
+                    <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                    KSK | Finance
+                </a>
+
+                <span class="navbar-text">
+                    Text here
+                </span>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="nav nav-pills">
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active home" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="aboutme.html">About Me</a>
+                            <a class="nav-link" href="#">Link</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="football.html">Football</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="music.html">Music</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Movie/Drama</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Finance</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Carrier</a>
-                        </li>
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">More</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a class="nav-link disabled">Under-Construction</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
                     </ul>
+
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
-
-        </nav>
-
-        <div class="p-5 mb-4 bg-light rounded-3">
-            <div class="container-fluid py-5">
-                <h1 class="display-5 fw-bold">Thanks for visiting my homepage!</h1>
-                <p class="col-md-8 fs-4">This web site is about Yoshida Keisuke. Learned to write through the course of CS50 from Harvard University.</p>
-                <button class="btn btn-primary btn-lg" type="button" onclick="alert_thanks()">Click if you liked my page</button>
-
-                <script>
-                    function alert_thanks(){
-                        alert("Thanks for liking my page!");
-                    }
-                </script>
-            </div>
-        </div>
-
-        <section>
-
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card">
-                        <img src="https://media.gettyimages.com/photos/hand-shadow-of-woman-on-glass-picture-id1200217290?k=20&m=1200217290&s=612x612&w=0&h=UXK4eNiCBFrFLMW_aTTyH8FZIiPn5ScUf_f6SihoVtU=" class="card-img-top" alt="Yoshida Keisuke">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="aboutme.html">About Me</a></h5>
-                            <p class="card-text">Explor more about <b>me</b>.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="https://www.realmadrid.com/StaticFiles/RealMadridResponsive/images/header_logo.svg" class="card-img-top" alt="realmadrid.com">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="football.html">Football</a></h5>
-                            <p class="card-text"><b>Real Madrid</b> is the <strong>best</strong> club in the world.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="https://jaykogami.com/wp-content/uploads/2020/04/Apple_music_logo_bw.jpg" class="card-img-top" alt="Apple Music">
-                        <div class="card-body">
-                            <h5 class="card-title"><a href="music.html">Music</a></h5>
-                            <p class="card-text">Stay <b>tuned</b>.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="https://www.disney.co.jp/etc/designs/disney-design/default-og-image.png" class="card-img-top" alt="favorite-movie">
-                        <div class="card-body">
-                            <h5 class="card-title">Movie/Drama</h5>
-                            <p class="card-text">Experience world of <b>dreams</b>.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="https://incentz.com/wp-content/uploads/2021/07/market-markets-stock-market-stock-stocks-rise-stock-rally-1608188452-80872620.jpg" class="card-img-top" alt="market">
-                        <div class="card-body">
-                            <h5 class="card-title">Finance</h5>
-                            <p class="card-text">An investment in <b>knowledge</b> pays the best interest.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="https://hpcase.jp/wp-content/uploads/2019/09/career-3386334_800.jpg" class="card-img-top" alt="fujitsu.com">
-                        <div class="card-body">
-                            <h5 class="card-title">Carrier</h5>
-                            <p class="card-text">Make the world more <b>sustainable</b>.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="https://t3.ftcdn.net/jpg/00/77/28/46/360_F_77284689_QcebzpP6dvdfNnsJSHa8QtCUGcfXfFhw.jpg" class="card-img-top" alt="under-construction">
-                        <div class="card-body">
-                            <h5 class="card-title">Under-Construction</h5>
-                            <p class="card-text">Future is bright.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <article>
-
-        </article>
-
-        <aside>
-
-        </aside>
+          </nav>
 
         <div class="container">
 
