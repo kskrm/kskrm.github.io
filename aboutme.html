@@ -7,127 +7,64 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="styles.css" rel="stylesheet">
 
-        <title>KSK | About Me</title>
+        <title>KSK | Finance</title>
 
     </head>
     <body>
-        <header>
-
-        </header>
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand page-title" href="index.html">KSK</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#">
+                    <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                    KSK | Finance
+                </a>
+
+                <span class="navbar-text">
+                    Text here
+                </span>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="nav nav-pills">
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link home" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="aboutme.html">About Me</a>
+                            <a class="nav-link" href="#">Link</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="football.html">Football</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="music.html">Music</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Movie/Drama</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Finance</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Carrier</a>
-                        </li>
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">More</a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a class="nav-link disabled">Under-Construction</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
                     </ul>
+
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
-
-        </nav>
-
-        <div class="px-4 py-5 my-5 text-center">
-            <h1 class="display-5 fw-bold">About Me</h1>
-            <div class="col-lg-6 mx-auto">
-                <p class="lead mb-4">Explor more about <b>me</b>.</p>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <button type="button" class="btn btn-primary btn-lg px-4 gap-3">No way back to Home</button>
-                </div>
-            </div>
-        </div>
-
-        <section>
-            <div class="container px-4 py-5" id="hanging-icons">
-                <h2 class="pb-2 border-bottom">Who am I?</h2>
-                <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-                    <div class="col d-flex align-items-start">
-                        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle icon-features" viewBox="0 0 16 16">
-                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                                <use xlink:href="#cpu-fill"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h2>Name</h2>
-                            <p>Yoshida Keisuke
-                            <br>吉田　圭佑
-                            <br>よしだ　けいすけ
-                            <br>ヨシダ　ケイスケ</p>
-                        </div>
-                    </div>
-                    <div class="col d-flex align-items-start">
-                        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-calendar-event icon-features" viewBox="0 0 16 16">
-                                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
-                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h2>Birth</h2>
-                            <p>March 16, 1999
-                            <br>Kobe, Hyogo</p>
-                        </div>
-                    </div>
-                    <div class="col d-flex align-items-start">
-                        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart icon-features" viewBox="0 0 16 16">
-                                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h2>Likes</h2>
-                            <p>Football - Real Madrid</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <article>
-
-        </article>
-
-        <aside>
-
-        </aside>
+          </nav>
 
         <div class="container">
 
