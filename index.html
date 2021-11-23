@@ -12,12 +12,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="styles.css" rel="stylesheet">
 
-        <script>
-            var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
-                trigger: 'focus'
-            });
-        </script>
-
         <title>KSK | Home</title>
 
     </head>
@@ -153,9 +147,9 @@
                 </div>
 
                 <div class="col">
-                    <a tabindex="0" class="btn btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+                    <button type="button" class="btn btn-danger" data-bs-toggle="popover" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">
                         I said NOTHING
-                    </a>
+                    </button>
                 </div>
 
             </div>
